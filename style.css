@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E9ECF8;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header-logo{
+    padding: 3% 0% 0% 4%;
+}
+
+.presentacion-contenido{
+    display: flex;
+    align-items: center;
+    padding: 0% 9%;
+    justify-content: space-between;
+    gap: 82px
+}
+
+::placeholder{
+    font-family: 'inter', sans-serif;
+    font-size: 2.25rem;
+    color: #003366;
+}
+
+.container {
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    width: 577px;
+}
+
+.text-input {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 35rem;
+    font-size: 32px;
+    font-family: 'inter', sans-serif;
+    resize: none;
+    background-color: #E9ECF8;
+    border: none;
+    color: #003366;
+}
+
+/* Estilo para quitar el borde al hacer clic en un textarea */
+textarea:focus {
+    outline: none; /* Quita el borde de enfoque */
+}
+
+.texto-aviso{
+    font-family: 'inter', sans-serif;
+    color: #495057;
+    font-size: 12px;
+}
+  
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'inter', sans-serif;
+    width: 328px;
+    height: 67px;
+}
+
+button.encrypt {
+    background-color: #0A3871;
+    color: #fff;
+}
+
+button.decrypt {
+    background-color: #E9ECF8;
+    color: #000;
+    border: 2px solid #0A3871;
+}
+
+.hidden{
+    display: none;
+}
+
+.right-section {
+    align-items: center;
+    width: 400px;
+    height: 944px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.output {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'inter', sans-serif;
+    color: #343A40;
+}
+
+.output-mensaje{
+    font-size: 24px;
+}
+
+.output-mensaje-secundario{
+    font-size: 16px;
+}
+
+.output p {
+    margin: 15px 0;
+}
+
+.footer{
+    background-color: #0A3871;
+    padding: 1.5rem;
+    color: #E9ECF8;
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){
+
+    .presentacion-contenido{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .right-section{
+        width: 100%;
+        height: auto;
+    }
+
+    .output-image{
+        display: none;
+    }
+
+    button{
+        width: 100%;
+    }
+}
+
